@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>formulario </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<form #form="ngForm" (ngSubmit)="upshow(form)">
+  <ion-list>
+    <ion-item>
+   <ion-label position="floating">proprietario</ion-label>
+   <ion-input  name="dono"  [ngModel]="registro.dono"  type="text" value="" placeholder="Digite o nome do Proprietario "></ion-input>
+ </ion-item>
+ <ion-item>
+   <ion-label position="floating">Marca</ion-label>
+   <ion-input name="marca"  [ngModel]="registro.marca" type="text" value="" placeholder="Digite a Marca"></ion-input>
+ </ion-item>
+ <ion-item>
+  <ion-label position="floating">Modelo</ion-label>
+  <ion-input name="modelo"  [ngModel]="registro.modelo" type="text" value="" placeholder="Digite o ano"></ion-input>
+</ion-item><ion-item>
+  <ion-label position="floating">ano</ion-label>
+  <ion-input name="ano"  [ngModel]="registro.ano" type="text" value="" placeholder="Digite o ano"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Placa</ion-label>
+  <ion-input name="placa"  [ngModel]="registro.placa" type="text" value="" placeholder="digite a Placa"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">km</ion-label>
+  <ion-input name="km"  [ngModel]="registro.km" type="text" value="" placeholder="Digite a kilomentragem"></ion-input>
+</ion-item>
+  </ion-list>
+ <ion-button  type="submit"  color="secondary"  expand="block" shape="round">
+   editar
+ </ion-button>
+</form>
+</ion-content>

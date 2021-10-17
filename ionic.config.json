@@ -1,0 +1,7 @@
+{
+  "name": "motoplus",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
